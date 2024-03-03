@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <RootNamespace>Frank.EnterpriseFizzBuzz</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Frank.EnterpriseFizzBuzz.Hosting\Frank.EnterpriseFizzBuzz.Hosting.csproj" />
+      <ProjectReference Include="..\Frank.EnterpriseFizzBuzz.Rules\Frank.EnterpriseFizzBuzz.Rules.csproj" />
+    </ItemGroup>
+
+</Project>

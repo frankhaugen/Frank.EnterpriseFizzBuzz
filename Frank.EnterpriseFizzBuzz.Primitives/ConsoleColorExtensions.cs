@@ -1,4 +1,4 @@
-namespace Frank.EnterpriseFizzBuzz;
+namespace Frank.EnterpriseFizzBuzz.Primitives;
 
 public static class ConsoleColorExtensions
 {

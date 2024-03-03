@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frank.EnterpriseFizzBuzz", "Frank.EnterpriseFizzBuzz\Frank.EnterpriseFizzBuzz.csproj", "{BE42CDF4-8143-48B7-B503-776D32421323}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frank.EnterpriseFizzBuzz.Application", "Frank.EnterpriseFizzBuzz.Application\Frank.EnterpriseFizzBuzz.Application.csproj", "{BE42CDF4-8143-48B7-B503-776D32421323}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frank.EnterpriseFizzBuzz.Tests", "Frank.EnterpriseFizzBuzz.Tests\Frank.EnterpriseFizzBuzz.Tests.csproj", "{016416C6-A7D0-44A3-9183-9F8D5D387124}"
 EndProject
@@ -17,6 +17,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		CODE_OF_CONDUCT.md = CODE_OF_CONDUCT.md
 		CONTRIBUTING.md = CONTRIBUTING.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frank.EnterpriseFizzBuzz.Rules", "Frank.EnterpriseFizzBuzz.Rules\Frank.EnterpriseFizzBuzz.Rules.csproj", "{4A94F8E8-82F0-48A8-B673-62DBB6445792}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frank.EnterpriseFizzBuzz.Primitives", "Frank.EnterpriseFizzBuzz.Primitives\Frank.EnterpriseFizzBuzz.Primitives.csproj", "{C5A07AC4-25EF-4BAC-950A-F377C1C4B40C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frank.EnterpriseFizzBuzz.Hosting", "Frank.EnterpriseFizzBuzz.Hosting\Frank.EnterpriseFizzBuzz.Hosting.csproj", "{F4F86CB8-5B0E-46B3-97EF-518B22404F00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frank.EnterpriseFizzBuzz.Services", "Frank.EnterpriseFizzBuzz.Services\Frank.EnterpriseFizzBuzz.Services.csproj", "{617F9E0A-7A2D-466A-B8D4-92CF44D5BE9F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,5 +43,21 @@ Global
 		{016416C6-A7D0-44A3-9183-9F8D5D387124}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{016416C6-A7D0-44A3-9183-9F8D5D387124}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{016416C6-A7D0-44A3-9183-9F8D5D387124}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A94F8E8-82F0-48A8-B673-62DBB6445792}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A94F8E8-82F0-48A8-B673-62DBB6445792}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A94F8E8-82F0-48A8-B673-62DBB6445792}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A94F8E8-82F0-48A8-B673-62DBB6445792}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5A07AC4-25EF-4BAC-950A-F377C1C4B40C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5A07AC4-25EF-4BAC-950A-F377C1C4B40C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5A07AC4-25EF-4BAC-950A-F377C1C4B40C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5A07AC4-25EF-4BAC-950A-F377C1C4B40C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4F86CB8-5B0E-46B3-97EF-518B22404F00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4F86CB8-5B0E-46B3-97EF-518B22404F00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4F86CB8-5B0E-46B3-97EF-518B22404F00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4F86CB8-5B0E-46B3-97EF-518B22404F00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{617F9E0A-7A2D-466A-B8D4-92CF44D5BE9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{617F9E0A-7A2D-466A-B8D4-92CF44D5BE9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{617F9E0A-7A2D-466A-B8D4-92CF44D5BE9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{617F9E0A-7A2D-466A-B8D4-92CF44D5BE9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

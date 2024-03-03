@@ -1,4 +1,6 @@
-namespace Frank.EnterpriseFizzBuzz;
+using Frank.EnterpriseFizzBuzz.Primitives;
+
+namespace Frank.EnterpriseFizzBuzz.Services;
 
 public class RuleEvaluatorService<T>
 {

@@ -1,5 +1,8 @@
 
-namespace Frank.EnterpriseFizzBuzz;
+
+using Frank.EnterpriseFizzBuzz.Primitives;
+
+namespace Frank.EnterpriseFizzBuzz.Rules;
 
 public class FizzRule : IRule<ulong>
 {

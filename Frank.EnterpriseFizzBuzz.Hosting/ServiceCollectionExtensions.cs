@@ -1,7 +1,10 @@
 ﻿using Frank.Channels.DependencyInjection;
+using Frank.EnterpriseFizzBuzz.Primitives;
+using Frank.EnterpriseFizzBuzz.Rules;
+using Frank.EnterpriseFizzBuzz.Services;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Frank.EnterpriseFizzBuzz;
+namespace Frank.EnterpriseFizzBuzz.Hosting;
 
 public static class ServiceCollectionExtensions
 {
@@ -15,7 +18,7 @@ public static class ServiceCollectionExtensions
         services.AddChannel<Output>();
         services.AddSingleton<RuleEvaluatorService<ulong>>();
         services.AddHostedService<CountingService>();
-        services.AddHostedService<RuleEngine>();
+        services.AddHostedService<RuleService>();
         services.AddHostedService<OutputService>();
         return services;
     }

@@ -1,4 +1,4 @@
-namespace Frank.EnterpriseFizzBuzz;
+namespace Frank.EnterpriseFizzBuzz.Primitives;
 
 public class Output(string value)
 {

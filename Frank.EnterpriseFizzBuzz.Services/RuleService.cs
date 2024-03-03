@@ -1,16 +1,17 @@
 using System.Text;
 using System.Threading.Channels;
+using Frank.EnterpriseFizzBuzz.Primitives;
 using Microsoft.Extensions.Hosting;
 
-namespace Frank.EnterpriseFizzBuzz;
+namespace Frank.EnterpriseFizzBuzz.Services;
 
-public class RuleEngine : BackgroundService
+public class RuleService : BackgroundService
 {
     private readonly ChannelReader<Count> _reader;
     private readonly ChannelWriter<Output> _writer;
     private readonly RuleEvaluatorService<ulong> _ruleEvaluatorService;
     
-    public RuleEngine(ChannelReader<Count> reader, ChannelWriter<Output> writer, RuleEvaluatorService<ulong> ruleEvaluatorService)
+    public RuleService(ChannelReader<Count> reader, ChannelWriter<Output> writer, RuleEvaluatorService<ulong> ruleEvaluatorService)
     {
         _reader = reader;
         _writer = writer;

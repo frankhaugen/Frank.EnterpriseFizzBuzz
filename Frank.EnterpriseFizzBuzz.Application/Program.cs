@@ -1,4 +1,4 @@
-﻿using Frank.EnterpriseFizzBuzz;
+﻿using Frank.EnterpriseFizzBuzz.Hosting;
 using Microsoft.Extensions.Hosting;
 
 var builder = Host.CreateEmptyApplicationBuilder(new HostApplicationBuilderSettings());

@@ -1,7 +1,8 @@
 using System.Threading.Channels;
+using Frank.EnterpriseFizzBuzz.Primitives;
 using Microsoft.Extensions.Hosting;
 
-namespace Frank.EnterpriseFizzBuzz;
+namespace Frank.EnterpriseFizzBuzz.Services;
 
 public class OutputService : BackgroundService
 {
