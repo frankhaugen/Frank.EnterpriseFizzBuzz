@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frank.EnterpriseFizzBuzz.Ho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frank.EnterpriseFizzBuzz.Services", "Frank.EnterpriseFizzBuzz.Services\Frank.EnterpriseFizzBuzz.Services.csproj", "{617F9E0A-7A2D-466A-B8D4-92CF44D5BE9F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frank.EnterpriseFizzBuzz.Tests.Benchmarks", "Frank.EnterpriseFizzBuzz.Tests.Benchmarks\Frank.EnterpriseFizzBuzz.Tests.Benchmarks.csproj", "{CEA0F02C-9FB4-43E5-9695-A3EF1478429E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,5 +61,9 @@ Global
 		{617F9E0A-7A2D-466A-B8D4-92CF44D5BE9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{617F9E0A-7A2D-466A-B8D4-92CF44D5BE9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{617F9E0A-7A2D-466A-B8D4-92CF44D5BE9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEA0F02C-9FB4-43E5-9695-A3EF1478429E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEA0F02C-9FB4-43E5-9695-A3EF1478429E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEA0F02C-9FB4-43E5-9695-A3EF1478429E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEA0F02C-9FB4-43E5-9695-A3EF1478429E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

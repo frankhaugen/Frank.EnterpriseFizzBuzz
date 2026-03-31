@@ -8,15 +8,14 @@ namespace Frank.EnterpriseFizzBuzz.Hosting;
 
 public static class ServiceCollectionExtensions
 {
-    public static IServiceCollection AddFizzBuzz(this IServiceCollection services)
+    public static IServiceCollection AddFizzBuzz<T>(this IServiceCollection services, Action<IRuleSetBuilder<T>> configureRules)
     {
-        services.AddSingleton<IRule<ulong>, FizzRule>();
-        services.AddSingleton<IRule<ulong>, BuzzRule>();
-        services.AddSingleton<IRule<ulong>, FooRule>();
-        
+        var ruleSet = new RuleSetBuilder<T>(services);
+        configureRules(ruleSet);
+        services.AddSingleton<IRuleSetBuilder<T>>(ruleSet);
+        services.AddSingleton<RuleEvaluatorService<T>>();
         services.AddChannel<Count>();
         services.AddChannel<Output>();
-        services.AddSingleton<RuleEvaluatorService<ulong>>();
         services.AddHostedService<CountingService>();
         services.AddHostedService<RuleService>();
         services.AddHostedService<OutputService>();

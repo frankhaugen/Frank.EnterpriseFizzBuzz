@@ -13,7 +13,7 @@ public class CountingService(ChannelWriter<Count> writer) : BackgroundService
         while (!stoppingToken.IsCancellationRequested)
         {
             await writer.WriteAsync(new Count { Value = _count++ }, stoppingToken);
-            await Task.Delay(100, stoppingToken);
+            await Task.Delay(TimeSpan.FromMicroseconds(1000), stoppingToken);
         }
     }
 }
